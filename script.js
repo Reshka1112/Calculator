@@ -13,4 +13,21 @@ switch (calc) {
     default: alert ("Повторите действие");
     break;
 }
-alert ("Ваш результат:" + calc)
+alert ("Ваш результат:" + calc);
+
+var calc1 = prompt("Выберите действие: +, -, /, *");
+var c = prompt ("Введите число c");
+
+switch (calc1) {
+    case"+": calc1 = calc+(+c);
+        break;
+    case "-": calc1 = calc-(+c);
+        break;
+    case "/": calc1 = calc/(+c);
+        break;
+    case "*": calc1 = calc*(+c);
+        break;
+    default: alert ("Повторите действие");
+        break;
+}
+alert ("Ваш результат:" + calc1);
